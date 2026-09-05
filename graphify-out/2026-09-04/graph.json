@@ -16,30 +16,6 @@
       "source_location": "L12"
     },
     {
-      "id": "src_main_read_item",
-      "label": "read_item()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "get",
-      "file_type": "code",
-      "norm_label": "read_item()",
-      "source_file": "src/main.py",
-      "source_location": "L10"
-    },
-    {
-      "id": "src_main_read_root",
-      "label": "read_root()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "get",
-      "file_type": "code",
-      "norm_label": "read_root()",
-      "source_file": "src/main.py",
-      "source_location": "L6"
-    },
-    {
       "id": "opencode_opencode",
       "label": "opencode.json",
       "_origin": "ast",
@@ -110,7 +86,7 @@
       "label": "AGENTS.md",
       "_origin": "ast",
       "community": 2,
-      "community_name": "Guide for Agent",
+      "community_name": "AGENTS.md",
       "file_type": "document",
       "node_kind": "page",
       "norm_label": "agents.md",
@@ -118,38 +94,14 @@
       "source_location": "L1"
     },
     {
-      "id": "agents_development_policy",
-      "label": "Development Policy",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "Guide for Agent",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "development policy",
-      "source_file": "AGENTS.md",
-      "source_location": "L17"
-    },
-    {
       "id": "agents_graphify",
       "label": "graphify",
       "_origin": "ast",
       "community": 2,
-      "community_name": "Guide for Agent",
+      "community_name": "AGENTS.md",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "graphify",
-      "source_file": "AGENTS.md",
-      "source_location": "L3"
-    },
-    {
-      "id": "agents_guide_for_agent",
-      "label": "Guide for Agent",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "Guide for Agent",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "guide for agent",
       "source_file": "AGENTS.md",
       "source_location": "L1"
     },
@@ -164,91 +116,9 @@
       "norm_label": "readme.md",
       "source_file": "README.md",
       "source_location": "L1"
-    },
-    {
-      "id": "get",
-      "label": "get",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "get",
-      "file_type": "code",
-      "norm_label": "get",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "src_main",
-      "label": "main.py",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "get",
-      "file_type": "code",
-      "norm_label": "main.py",
-      "source_file": "src/main.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "pkg_stripe_sandbox_be",
-      "label": "stripe-sandbox-be",
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "stripe-sandbox-be",
-      "ecosystem": "python",
-      "file_type": "code",
-      "norm_label": "stripe-sandbox-be",
-      "source_file": "pyproject.toml",
-      "source_location": "L1",
-      "type": "package",
-      "version": "0.1.0"
-    },
-    {
-      "id": "src_init",
-      "label": "src/__init__.py",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "src/__init__.py",
-      "file_type": "code",
-      "norm_label": "src/__init__.py",
-      "source_file": "src/__init__.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_stripe_sandbox_be_init",
-      "label": "stripe_sandbox_be/__init__.py",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "stripe_sandbox_be/__init__.py",
-      "file_type": "code",
-      "norm_label": "stripe_sandbox_be/__init__.py",
-      "source_file": "src/stripe_sandbox_be/__init__.py",
-      "source_location": "L1"
     }
   ],
   "links": [
-    {
-      "source": "src_main_read_item",
-      "target": "get",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "decorator",
-      "source_file": "src/main.py",
-      "source_location": "L9",
-      "weight": 1.0
-    },
-    {
-      "source": "src_main_read_root",
-      "target": "get",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "decorator",
-      "source_file": "src/main.py",
-      "source_location": "L5",
-      "weight": 1.0
-    },
     {
       "source": "opencode_opencode_plugin",
       "target": "ref_opencode_plugins_graphify_js",
@@ -263,35 +133,13 @@
     },
     {
       "source": "agents",
-      "target": "agents_guide_for_agent",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "AGENTS.md",
-      "source_location": "L1",
-      "weight": 1.0
-    },
-    {
-      "source": "agents_guide_for_agent",
-      "target": "agents_development_policy",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "AGENTS.md",
-      "source_location": "L17",
-      "weight": 1.0
-    },
-    {
-      "source": "agents_guide_for_agent",
       "target": "agents_graphify",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AGENTS.md",
-      "source_location": "L3",
+      "source_location": "L1",
       "weight": 1.0
     },
     {
@@ -328,28 +176,6 @@
       "weight": 1.0
     },
     {
-      "source": "src_main",
-      "target": "src_main_read_item",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/main.py",
-      "source_location": "L10",
-      "weight": 1.0
-    },
-    {
-      "source": "src_main",
-      "target": "src_main_read_root",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/main.py",
-      "source_location": "L6",
-      "weight": 1.0
-    },
-    {
       "source": "opencode_plugins_graphify_rationale_4",
       "target": "opencode_plugins_graphify",
       "relation": "rationale_for",
@@ -362,5 +188,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "fabb4e944775ef9e3c1c55c1a286a367398a89db"
+  "built_at_commit": "d1721947f3ee379e65e1e7ebe02fdd92337381ec"
 }

@@ -1,6 +1,10 @@
 {
   "0": "opencode.json",
   "1": "graphify.js",
-  "2": "AGENTS.md",
-  "3": "README.md"
+  "2": "Guide for Agent",
+  "3": "README.md",
+  "4": "get",
+  "5": "stripe-sandbox-be",
+  "6": "src/__init__.py",
+  "7": "stripe_sandbox_be/__init__.py"
 }
