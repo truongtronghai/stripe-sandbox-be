@@ -14,7 +14,7 @@
       "file_type": "code",
       "norm_label": "item",
       "source_file": "src/main.py",
-      "source_location": "L12"
+      "source_location": "L6"
     },
     {
       "id": "opencode_plugins_graphify_graphifyplugin",
@@ -34,11 +34,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "main.py",
+      "community_name": "get",
       "file_type": "code",
       "norm_label": "read_item()",
       "source_file": "src/main.py",
-      "source_location": "L24"
+      "source_location": "L16"
     },
     {
       "id": "src_main_read_root",
@@ -46,23 +46,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "main.py",
+      "community_name": "get",
       "file_type": "code",
       "norm_label": "read_root()",
       "source_file": "src/main.py",
-      "source_location": "L19"
-    },
-    {
-      "id": "src_ws_route_route_get_ws_route",
-      "label": "get_ws_route()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "main.py",
-      "file_type": "code",
-      "norm_label": "get_ws_route()",
-      "source_file": "src/ws_route/route.py",
-      "source_location": "L4"
+      "source_location": "L12"
     },
     {
       "id": "src_main_update_item",
@@ -74,7 +62,7 @@
       "file_type": "code",
       "norm_label": "update_item()",
       "source_file": "src/main.py",
-      "source_location": "L29"
+      "source_location": "L20"
     },
     {
       "id": "sample_cheeseshop",
@@ -239,22 +227,11 @@
       "source_location": "L1"
     },
     {
-      "id": "fastapi",
-      "label": "FastAPI",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "main.py",
-      "file_type": "code",
-      "norm_label": "fastapi",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
       "id": "get",
       "label": "get",
       "_origin": "ast",
       "community": 4,
-      "community_name": "main.py",
+      "community_name": "get",
       "file_type": "code",
       "norm_label": "get",
       "source_file": "",
@@ -265,21 +242,10 @@
       "label": "main.py",
       "_origin": "ast",
       "community": 4,
-      "community_name": "main.py",
+      "community_name": "get",
       "file_type": "code",
       "norm_label": "main.py",
       "source_file": "src/main.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_ws_route_route",
-      "label": "route.py",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "main.py",
-      "file_type": "code",
-      "norm_label": "route.py",
-      "source_file": "src/ws_route/route.py",
       "source_location": "L1"
     },
     {
@@ -351,7 +317,7 @@
       "confidence_score": 1.0,
       "context": "decorator",
       "source_file": "src/main.py",
-      "source_location": "L23",
+      "source_location": "L15",
       "weight": 1.0
     },
     {
@@ -363,7 +329,7 @@
       "confidence_score": 1.0,
       "context": "decorator",
       "source_file": "src/main.py",
-      "source_location": "L18",
+      "source_location": "L11",
       "weight": 1.0
     },
     {
@@ -375,7 +341,7 @@
       "confidence_score": 1.0,
       "context": "decorator",
       "source_file": "src/main.py",
-      "source_location": "L28",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
@@ -391,54 +357,6 @@
       "weight": 1.0
     },
     {
-      "source": "src_main",
-      "target": "src_ws_route_route_get_ws_route",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/main.py",
-      "source_location": "L7",
-      "weight": 1.0
-    },
-    {
-      "source": "src_main",
-      "target": "fastapi",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/main.py",
-      "source_location": "L1",
-      "weight": 1.0
-    },
-    {
-      "source": "src_main",
-      "target": "src_ws_route_route",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/main.py",
-      "source_location": "L7",
-      "weight": 1.0
-    },
-    {
-      "source": "src_ws_route_route",
-      "target": "fastapi",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/ws_route/route.py",
-      "source_location": "L1",
-      "weight": 1.0
-    },
-    {
       "source": "src_main_update_item",
       "target": "src_main_item",
       "relation": "references",
@@ -447,19 +365,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "src/main.py",
-      "source_location": "L29",
-      "weight": 1.0
-    },
-    {
-      "source": "src_ws_route_route_get_ws_route",
-      "target": "fastapi",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "parameter_type",
-      "source_file": "src/ws_route/route.py",
-      "source_location": "L4",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -563,24 +469,13 @@
     },
     {
       "source": "src_main",
-      "target": "src_main_item",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/main.py",
-      "source_location": "L12",
-      "weight": 1.0
-    },
-    {
-      "source": "src_main",
       "target": "src_main_read_root",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/main.py",
-      "source_location": "L19",
+      "source_location": "L12",
       "weight": 1.0
     },
     {
@@ -591,7 +486,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/main.py",
-      "source_location": "L24",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -602,18 +497,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/main.py",
-      "source_location": "L29",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
-      "source": "src_ws_route_route",
-      "target": "src_ws_route_route_get_ws_route",
+      "source": "src_main",
+      "target": "src_main_item",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "src/ws_route/route.py",
-      "source_location": "L4",
+      "source_file": "src/main.py",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -624,7 +519,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/main.py",
-      "source_location": "L12",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -640,5 +535,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "c77beebed833252e66d74660d2d43550acb29d83"
+  "built_at_commit": "c26edbe97035a48843854d9804bc91d87bde6c7c"
 }
