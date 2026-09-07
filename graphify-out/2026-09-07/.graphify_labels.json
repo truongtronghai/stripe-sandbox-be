@@ -7,7 +7,5 @@
   "5": "stripe-sandbox-be",
   "6": "Item",
   "7": "stripe_sandbox_be/__init__.py",
-  "8": "sample.py",
-  "9": "stripe_webhook",
-  "10": "converters/__init__.py"
+  "8": "sample.py"
 }

@@ -14,7 +14,7 @@
       "file_type": "code",
       "norm_label": "item",
       "source_file": "src/main.py",
-      "source_location": "L13"
+      "source_location": "L12"
     },
     {
       "id": "opencode_plugins_graphify_graphifyplugin",
@@ -38,7 +38,7 @@
       "file_type": "code",
       "norm_label": "read_item()",
       "source_file": "src/main.py",
-      "source_location": "L25"
+      "source_location": "L24"
     },
     {
       "id": "src_main_read_root",
@@ -50,7 +50,7 @@
       "file_type": "code",
       "norm_label": "read_root()",
       "source_file": "src/main.py",
-      "source_location": "L20"
+      "source_location": "L19"
     },
     {
       "id": "src_ws_route_route_get_ws_route",
@@ -74,7 +74,7 @@
       "file_type": "code",
       "norm_label": "update_item()",
       "source_file": "src/main.py",
-      "source_location": "L30"
+      "source_location": "L29"
     },
     {
       "id": "sample_cheeseshop",
@@ -111,30 +111,6 @@
       "norm_label": "parrot()",
       "source_file": "sample.py",
       "source_location": "L10"
-    },
-    {
-      "id": "src_main_stripe_webhook",
-      "label": "stripe_webhook()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "stripe_webhook",
-      "file_type": "code",
-      "norm_label": "stripe_webhook()",
-      "source_file": "src/main.py",
-      "source_location": "L35"
-    },
-    {
-      "id": "src_utils_converters_raw_bytes_literal_to_dict",
-      "label": "to_dict()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "stripe_webhook",
-      "file_type": "code",
-      "norm_label": "to_dict()",
-      "source_file": "src/utils/converters/raw_bytes_literal.py",
-      "source_location": "L4"
     },
     {
       "id": "opencode_opencode",
@@ -201,17 +177,6 @@
       "norm_label": "important: keep the reminder string free of backticks and $(...) constructs.",
       "source_file": ".opencode/plugins/graphify.js",
       "source_location": "L4"
-    },
-    {
-      "id": "src_utils_converters_init",
-      "label": "converters/__init__.py",
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "converters/__init__.py",
-      "file_type": "code",
-      "norm_label": "converters/__init__.py",
-      "source_file": "src/utils/converters/__init__.py",
-      "source_location": "L1"
     },
     {
       "id": "agents",
@@ -355,12 +320,12 @@
     },
     {
       "id": "src_stripe_sandbox_be_init",
-      "label": "stripe_sandbox_be/__init__.py",
+      "label": "__init__.py",
       "_origin": "ast",
       "community": 7,
       "community_name": "stripe_sandbox_be/__init__.py",
       "file_type": "code",
-      "norm_label": "stripe_sandbox_be/__init__.py",
+      "norm_label": "__init__.py",
       "source_file": "src/stripe_sandbox_be/__init__.py",
       "source_location": "L1"
     },
@@ -374,54 +339,9 @@
       "norm_label": "sample.py",
       "source_file": "sample.py",
       "source_location": "L1"
-    },
-    {
-      "id": "post",
-      "label": "post",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "stripe_webhook",
-      "file_type": "code",
-      "norm_label": "post",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "request",
-      "label": "Request",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "stripe_webhook",
-      "file_type": "code",
-      "norm_label": "request",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "src_utils_converters_raw_bytes_literal",
-      "label": "raw_bytes_literal.py",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "stripe_webhook",
-      "file_type": "code",
-      "norm_label": "raw_bytes_literal.py",
-      "source_file": "src/utils/converters/raw_bytes_literal.py",
-      "source_location": "L1"
     }
   ],
   "links": [
-    {
-      "source": "src_main_stripe_webhook",
-      "target": "src_utils_converters_raw_bytes_literal_to_dict",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/main.py",
-      "source_location": "L38",
-      "weight": 1.0
-    },
     {
       "source": "src_main_read_item",
       "target": "get",
@@ -431,7 +351,7 @@
       "confidence_score": 1.0,
       "context": "decorator",
       "source_file": "src/main.py",
-      "source_location": "L24",
+      "source_location": "L23",
       "weight": 1.0
     },
     {
@@ -443,19 +363,7 @@
       "confidence_score": 1.0,
       "context": "decorator",
       "source_file": "src/main.py",
-      "source_location": "L19",
-      "weight": 1.0
-    },
-    {
-      "source": "src_main_stripe_webhook",
-      "target": "post",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "decorator",
-      "source_file": "src/main.py",
-      "source_location": "L34",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -467,7 +375,7 @@
       "confidence_score": 1.0,
       "context": "decorator",
       "source_file": "src/main.py",
-      "source_location": "L29",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -484,14 +392,14 @@
     },
     {
       "source": "src_main",
-      "target": "src_utils_converters_raw_bytes_literal_to_dict",
+      "target": "src_ws_route_route_get_ws_route",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/main.py",
-      "source_location": "L8",
+      "source_location": "L7",
       "weight": 1.0
     },
     {
@@ -531,18 +439,6 @@
       "weight": 1.0
     },
     {
-      "source": "src_main_stripe_webhook",
-      "target": "request",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "parameter_type",
-      "source_file": "src/main.py",
-      "source_location": "L35",
-      "weight": 1.0
-    },
-    {
       "source": "src_main_update_item",
       "target": "src_main_item",
       "relation": "references",
@@ -551,7 +447,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "src/main.py",
-      "source_location": "L30",
+      "source_location": "L29",
       "weight": 1.0
     },
     {
@@ -673,7 +569,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/main.py",
-      "source_location": "L13",
+      "source_location": "L12",
       "weight": 1.0
     },
     {
@@ -684,7 +580,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/main.py",
-      "source_location": "L20",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
@@ -695,7 +591,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/main.py",
-      "source_location": "L25",
+      "source_location": "L24",
       "weight": 1.0
     },
     {
@@ -706,29 +602,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/main.py",
-      "source_location": "L30",
-      "weight": 1.0
-    },
-    {
-      "source": "src_main",
-      "target": "src_main_stripe_webhook",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/main.py",
-      "source_location": "L35",
-      "weight": 1.0
-    },
-    {
-      "source": "src_utils_converters_raw_bytes_literal",
-      "target": "src_utils_converters_raw_bytes_literal_to_dict",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/utils/converters/raw_bytes_literal.py",
-      "source_location": "L4",
+      "source_location": "L29",
       "weight": 1.0
     },
     {
@@ -750,7 +624,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/main.py",
-      "source_location": "L13",
+      "source_location": "L12",
       "weight": 1.0
     },
     {
@@ -766,5 +640,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "4225c82089f31c0f4251ab355a488182ce8ed3c8"
+  "built_at_commit": "c77beebed833252e66d74660d2d43550acb29d83"
 }

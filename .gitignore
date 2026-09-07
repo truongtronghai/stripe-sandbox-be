@@ -1,0 +1,39 @@
+# Byte-compiled / optimized / DLL support
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Environment variables and secrets (NEVER commit these)
+.env
+.env.*
+!.env.example
+secrets.json
+
+# FastAPI / Uvicorn / Gunicorn logs
+*.log
+gunicorn_error.log
+
+# Databases (SQLite, etc.)
+*.db
+*.sqlite3
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
