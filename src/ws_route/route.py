@@ -1,4 +1,27 @@
+from typing import Literal, TypedDict
+
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
+
+
+class SuccessResponse(TypedDict):
+    type: Literal["success"]
+    message: str
+    planId: str | None
+
+
+class InProgressResponse(TypedDict):
+    type: Literal["inProgress"]
+    message: str
+    planId: str | None
+
+
+class ErrorResponse(TypedDict):
+    type: Literal["error"]
+    message: str
+    planId: str | None
+
+
+PlanSelectionResponse = SuccessResponse | InProgressResponse | ErrorResponse
 
 
 def get_ws_route(app: FastAPI):
@@ -14,8 +37,8 @@ def get_ws_route(app: FastAPI):
                 try:
                     await websocket.send_json(
                         {
-                            "type": "response",
-                            "message": f"Hello {data['name']}",
+                            "type": "success",
+                            "message": f"Server sends back: {data}",
                         }
                     )
                 except KeyError:
