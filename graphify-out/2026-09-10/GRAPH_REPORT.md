@@ -1,7 +1,7 @@
 # Graph Report - stripe-sandbox-be  (2026-09-10)
 
 ## Corpus Check
-- 13 files · ~2,383 words
+- 13 files · ~2,366 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `e6cc9b05`
+- Built from commit: `67bb8c7c`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -65,7 +65,7 @@ Cohesion: 0.40
 Nodes (4): post, Request, stripe_webhook(), to_dict()
 
 ## Knowledge Gaps
-- **8 isolated node(s):** `$schema`, `.opencode/plugins/graphify.js`, `Commands`, `Development Policy`, `Gotchas` (+3 more)
+- **8 isolated node(s):** `Project overview`, `Commands`, `Gotchas`, `graphify`, `Development Policy` (+3 more)
   These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 22 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -74,5 +74,5 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `stripe_webhook()` connect `stripe_webhook` to `main.py`?**
   _High betweenness centrality (0.043) - this node is a cross-community bridge._
-- **What connects `$schema`, `.opencode/plugins/graphify.js`, `Commands` to the rest of the system?**
+- **What connects `Project overview`, `Commands`, `Gotchas` to the rest of the system?**
   _8 weakly-connected nodes found - possible documentation gaps or missing edges._

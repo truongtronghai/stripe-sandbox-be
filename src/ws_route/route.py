@@ -31,19 +31,18 @@ def get_ws_route(app: FastAPI):
 
         try:
             while True:
-                data = await websocket.receive_json()
-                print(f"data received from FE: {data}")
-
                 try:
-                    await websocket.send_json(
-                        {
-                            "type": "success",
-                            "message": f"Server sends back: {data}",
-                        }
-                    )
-                except KeyError:
-                    await websocket.send_text(
-                        "Having error in key of received data. Try again later"
-                    )
+                    data = await websocket.receive_json()
+                    print(f"data received from FE: {data}")
+                except Exception as e:
+                    print(f"recieve_json error: {type(e).__name__} {e}")
+                    raise
+
+                await websocket.send_json(
+                    {
+                        "type": "success",
+                        "message": f"Your plan selection: {data['planId']} has been upgraded successfully. Thank for your choice",
+                    }
+                )
         except WebSocketDisconnect:
             print("Client disconnected")
