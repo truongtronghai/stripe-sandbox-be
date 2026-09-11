@@ -5,14 +5,10 @@
   "3": "README.md",
   "4": "main.py",
   "5": "stripe-sandbox-be",
-  "6": "ws_route/route.py",
+  "6": "route.py",
   "7": "stripe_sandbox_be/__init__.py",
   "8": "sample.py",
-  "9": "raw_bytes_literal.py",
+  "9": "stripe_webhook",
   "10": "converters/__init__.py",
-  "11": "db/__init__.py",
-  "12": "webhook_route/route.py",
-  "13": "post",
-  "14": "Request",
-  "15": "webhook_route/__init__.py"
+  "11": "db/__init__.py"
 }

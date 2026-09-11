@@ -1,11 +1,12 @@
-from fastapi import FastAPI, Request
+from fastapi import FastAPI
 from pydantic import BaseModel
+
+from src.webhook_route.route import get_webhook_route
 
 # The key fix was: Python modules cannot use hyphens
 # DO NOT USE "-" in folder name
 # and the import must be a real module path, not a quoted string.
 from src.ws_route.route import get_ws_route
-from utils.converters.raw_bytes_literal import to_dict
 
 app = FastAPI()
 
@@ -31,13 +32,7 @@ def update_item(item_id: int, item: Item):
     return {"item_name": item.name, "item_id": item_id}
 
 
-@app.post("/stripe-webhook")
-async def stripe_webhook(request: Request):
-    payload = await request.body()
-
-    print(to_dict(payload))
-
-    return {"received": True}
+get_webhook_route(app)
 
 
 get_ws_route(app)

@@ -137,7 +137,7 @@
       "file_type": "code",
       "norm_label": "customfn()",
       "source_file": "sample.py",
-      "source_location": "L16"
+      "source_location": "L18"
     },
     {
       "id": "sample_parrot",
@@ -149,7 +149,7 @@
       "file_type": "code",
       "norm_label": "parrot()",
       "source_file": "sample.py",
-      "source_location": "L10"
+      "source_location": "L11"
     },
     {
       "id": "src_main_stripe_webhook",
@@ -770,7 +770,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "sample.py",
-      "source_location": "L10",
+      "source_location": "L11",
       "weight": 1.0
     },
     {
@@ -781,7 +781,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "sample.py",
-      "source_location": "L16",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -951,5 +951,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "67bb8c7c813278f517fafb3436502c5e6741d165"
+  "built_at_commit": "e6cc9b052d1ffcaccb9c7374c98d934467444207"
 }
